@@ -1,0 +1,24 @@
+Ambar Gurav
+ambar@example.com
++91 98765 43210
+
+Skills
+Python
+SQL
+FastAPI
+Docker
+Scikit-learn
+NLP
+Pandas
+
+Experience
+3 years building machine learning APIs, data pipelines, and resume screening tools.
+
+Education
+Bachelor of Engineering in Computer Science
+
+Projects
+HireSense AI - Resume ranking platform using NLP, semantic matching, and ATS scoring.
+
+Certifications
+AWS Certified Cloud Practitioner

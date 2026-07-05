@@ -1,0 +1,58 @@
+{
+  "Programming": [
+    "Python",
+    "Java",
+    "C++",
+    "JavaScript",
+    "TypeScript",
+    "SQL",
+    "R"
+  ],
+  "Machine Learning": [
+    "Machine Learning",
+    "Deep Learning",
+    "TensorFlow",
+    "PyTorch",
+    "Scikit-learn",
+    "XGBoost",
+    "Pandas",
+    "NumPy",
+    "NLP",
+    "Computer Vision"
+  ],
+  "Data": [
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Spark",
+    "Airflow",
+    "Tableau",
+    "Power BI"
+  ],
+  "Backend": [
+    "FastAPI",
+    "Django",
+    "Flask",
+    "REST API",
+    "GraphQL",
+    "SQLAlchemy"
+  ],
+  "Cloud": [
+    "AWS",
+    "Azure",
+    "GCP",
+    "Docker",
+    "Kubernetes",
+    "Render",
+    "Railway"
+  ],
+  "Practices": [
+    "Git",
+    "CI/CD",
+    "Testing",
+    "MLOps",
+    "Model Deployment",
+    "Data Cleaning",
+    "Feature Engineering"
+  ]
+}
