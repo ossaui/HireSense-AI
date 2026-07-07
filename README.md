@@ -7,9 +7,11 @@ HireSense AI is an intelligent recruitment platform that helps recruiters automa
 ---
 
 ## 🎥 Demo
+
 <p align="center">
-  <img src="assets/demo.gif" alt="HireSense AI Demo">
+  <img src="assets/demo.gif" alt="HireSense AI Demo" width="95%">
 </p>
+
 
 ### 🌐 Live Application
 
