@@ -23,19 +23,6 @@ https://hiresense-ai-4r3pcjrfsdfrgkp7t5hnpw.streamlit.app/
 
 https://hiresense-ai-2-kyaw.onrender.com/docs
 
----
-
-# 📸 Screenshots
-
-| Dashboard | Candidate Analysis |
-|-----------|--------------------|
-| ![](assets/dashboard.png) | ![](assets/analysis.png) |
-
-| Resume Ranking | Interview Questions |
-|----------------|---------------------|
-| ![](assets/ranking.png) | ![](assets/questions.png) |
-
----
 
 # ✨ Features
 
