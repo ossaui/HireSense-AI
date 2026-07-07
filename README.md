@@ -1,198 +1,294 @@
-# HireSense AI
+# 🚀 HireSense AI
 
-> AI-powered Resume Screening, ATS Scoring, Candidate Ranking & Recruiter Assistant.
+> **AI-Powered Resume Screening & Candidate Ranking Platform**
 
-HireSense AI is an end-to-end AI recruitment platform that automates resume screening using NLP, semantic similarity, ATS scoring, skill extraction, and recruiter-focused insights. Recruiters can upload multiple resumes, compare them against a job description, rank candidates instantly, identify skill gaps, and generate interview questions.
+HireSense AI is an intelligent recruitment platform that helps recruiters automate resume screening using Artificial Intelligence. It extracts candidate information, compares resumes with job descriptions, calculates semantic match scores, identifies skill gaps, ranks applicants, and generates AI-powered hiring insights and interview questions.
 
 ---
 
-## 🚀 Live Demo
+## 🎥 Demo
 
-### 🌐 Frontend Dashboard
+> **📹 Product Demo (Coming Soon)**
+
+<p align="center">
+
+<!-- Replace with your demo GIF -->
+<img src="assets/demo.gif" width="95%">
+
+</p>
+
+### 🌐 Live Application
+
+**Frontend**
+
 https://hiresense-ai-4r3pcjrfsdfrgkp7t5hnpw.streamlit.app/
 
-### ⚙️ Backend API (Swagger Docs)
+**Backend API**
+
 https://hiresense-ai-2-kyaw.onrender.com/docs
 
 ---
 
-## ✨ Features
+# 📸 Screenshots
 
-- 📄 Resume Parsing (PDF, DOCX, TXT)
-- 🤖 AI-powered ATS Resume Scoring
-- 🎯 Semantic Resume vs Job Description Matching
-- 🧠 NLP-based Skill Extraction
-- 📊 Candidate Ranking
-- 📈 Recruiter Dashboard
-- ❓ AI-generated Interview Questions
-- 🔍 Skill Gap Analysis
-- 📝 Recruiter-friendly Candidate Reports
-- ⚡ FastAPI Backend
-- 🎨 Streamlit Frontend
-- 🗄 SQLAlchemy Database Support
-- 🐳 Docker Support
-- ☁️ Cloud Deployment Ready
+| Dashboard | Candidate Analysis |
+|-----------|--------------------|
+| ![](assets/dashboard.png) | ![](assets/analysis.png) |
+
+| Resume Ranking | Interview Questions |
+|----------------|---------------------|
+| ![](assets/ranking.png) | ![](assets/questions.png) |
 
 ---
 
-# Architecture
+# ✨ Features
 
-```mermaid
-flowchart LR
+### 📄 Resume Parsing
 
-HR["Recruiter"] --> UI["Streamlit Dashboard"]
+- Extracts candidate information
+- Supports PDF, DOCX and TXT resumes
+- Automatically detects
+  - Skills
+  - Education
+  - Experience
+  - Contact Details
 
-UI --> API["FastAPI Backend"]
+---
 
-API --> Parser["Resume Parser"]
+### 🎯 Intelligent Candidate Matching
 
-API --> JD["Job Description Parser"]
+- Job Description Analysis
+- Semantic Resume Matching
+- AI Match Score
+- Skill Gap Analysis
+- Resume Ranking
 
-Parser --> Skills["Skill Extractor"]
+---
 
-JD --> Skills
+### 🤖 AI Recruiter Assistant
 
-Skills --> Matcher["Semantic Matching Engine"]
+- Candidate Summary
+- Resume Strength Analysis
+- Weakness Detection
+- Hiring Recommendation
+- Interview Question Generation
 
-Matcher --> ATS["ATS Scoring Engine"]
+---
 
-ATS --> Reports["Reports & Interview Questions"]
+### 📊 Recruiter Dashboard
 
-API --> DB[("Database")]
+- Candidate Rankings
+- Resume Insights
+- Skill Comparison
+- Hiring Analytics
+
+---
+
+# 🏗 System Workflow
+
+```text
+                Resume Upload
+                      │
+                      ▼
+             Resume Parsing Engine
+                      │
+                      ▼
+         Candidate Information Extraction
+                      │
+         ┌────────────┴────────────┐
+         ▼                         ▼
+ Job Description            Skill Extraction
+      Analysis
+         │                         │
+         └────────────┬────────────┘
+                      ▼
+             Match Score Engine
+                      ▼
+            AI Explanation Engine
+                      ▼
+      Interview Question Generator
+                      ▼
+          Recruiter Dashboard
 ```
 
 ---
 
-# Tech Stack
+# 🛠 Tech Stack
 
 | Category | Technologies |
-|----------|--------------|
+|-----------|--------------|
+| Language | Python |
 | Backend | FastAPI |
 | Frontend | Streamlit |
-| AI/NLP | Sentence Transformers, TF-IDF, spaCy |
-| Database | SQLAlchemy, SQLite, PostgreSQL |
-| File Processing | PyPDF2, python-docx |
+| AI | Google Gemini |
+| NLP | spaCy, Sentence Transformers |
+| Machine Learning | Scikit-learn |
+| Data Processing | Pandas, NumPy |
+| Resume Parsing | PyMuPDF, pdfplumber |
 | Deployment | Render, Streamlit Cloud |
-| Containerization | Docker |
 
 ---
 
-# Project Structure
+# ⚙️ Project Structure
 
 ```text
-HireSense-AI/
-
-├── app/
-│   ├── api/
-│   ├── database/
-│   ├── ml/
-│   ├── models/
-│   ├── prompts/
-│   ├── services/
-│   └── utils/
+HireSense-AI
+│
+├── backend/
 │
 ├── frontend/
-├── datasets/
-├── notebooks/
-├── screenshots/
+│
+├── assets/
+│
+├── docs/
+│
 ├── tests/
 │
-├── Dockerfile
-├── docker-compose.yml
 ├── requirements.txt
-├── requirements-dev.txt
-├── requirements-ml.txt
-├── .env.example
+│
 └── README.md
 ```
 
 ---
 
-# API Endpoints
+# 🚀 Installation
 
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| GET | `/health` | Health Check |
-| GET | `/skills/catalog` | Skill Catalog |
-| POST | `/analyze` | Analyze & Rank Candidates |
-
----
-
-# API Request
-
-### POST `/analyze`
-
-Upload:
-
-- One or more resumes
-- Job Description
-- Optional Job Title
-
-Returns:
-
-- ATS Score
-- Candidate Ranking
-- Skill Match %
-- Missing Skills
-- Recruiter Summary
-- Interview Questions
-
----
-
-# Deployment
-
-## Frontend
-
-Streamlit Community Cloud
-
-https://hiresense-ai-4r3pcjrfsdfrgkp7t5hnpw.streamlit.app/
-
-## Backend
-
-Render
-
-https://hiresense-ai-2-kyaw.onrender.com/docs
-
----
-
-# Docker
+Clone the repository
 
 ```bash
-docker compose up --build
+git clone https://github.com/ossaui/HireSense-AI.git
+```
+
+Move into the project
+
+```bash
+cd HireSense-AI
+```
+
+Create virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate virtual environment
+
+Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run Backend
+
+```bash
+uvicorn app.main:app --reload
+```
+
+Run Frontend
+
+```bash
+streamlit run streamlit_app.py
 ```
 
 ---
 
-# Testing
+# 📈 How It Works
+
+1. Upload one or multiple resumes.
+2. Enter a job description.
+3. Resume information is extracted.
+4. Skills are identified.
+5. Semantic similarity is calculated.
+6. Match scores are generated.
+7. Missing skills are detected.
+8. AI explains candidate suitability.
+9. Recruiters receive ranked applicants.
+10. AI generates interview questions.
+
+---
+
+# 🎯 Use Cases
+
+- AI Resume Screening
+- Applicant Tracking Assistance
+- Campus Hiring
+- Talent Acquisition
+- Recruitment Automation
+- Resume Ranking
+- HR Analytics
+
+---
+
+# 🔮 Future Improvements
+
+- Multi-resume Batch Processing
+- Resume Embeddings
+- Vector Database Search
+- RAG-based Candidate Search
+- Authentication System
+- Docker Deployment
+- CI/CD Pipeline
+- Recruiter Analytics Dashboard
+- ATS Resume Optimizer
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork this repository
+2. Create your feature branch
 
 ```bash
-pytest
+git checkout -b feature-name
 ```
 
+3. Commit your changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push the branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
 ---
 
-# Future Improvements
-
-- Authentication & Recruiter Accounts
-- Resume History
-- Background Job Processing
-- Analytics Dashboard
-- LLM-powered Candidate Feedback
-- Email Notifications
-- Multi-company Support
-- Vector Database Integration
-- RAG-powered Resume Search
-
----
-
-# License
+# 📄 License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-Developed by **Ambur**
+**Ambar**
 
-If you found this project helpful, consider giving it a ⭐ on GitHub.
+Data Science | Machine Learning | Artificial Intelligence
+
+GitHub
+
+https://github.com/ossaui
+
+---
+
+## ⭐ If you found this project helpful, please consider giving it a Star!
